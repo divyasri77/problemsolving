@@ -1,0 +1,25 @@
+Count the given numbers on your fingers and find the correct finger on which the number ends.
+
+The first number starts from the thumb, second on the index finger, third on the middle finger, fourth on the ring finger and fifth on the little finger.
+Again six comes on the ring finger and so on.
+
+
+
+ int a=0;
+        if(N % 8 == 0 || N % 8 == 2){
+            a= 2;
+        }
+        if(N % 8 == 1){
+            a= 1;
+        }
+        if( N% 8 == 3 || N %8 == 7){
+            a= 3;
+        }
+        if( N % 8 == 4 || N % 8 == 6)
+           a= 4;
+        
+        if(N % 8 == 5)
+            a= 5;
+        
+        return a;
+    }
