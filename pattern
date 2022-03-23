@@ -1,0 +1,54 @@
+      0
+     101
+    21012
+   3210123
+  432101234
+ 54321012345
+
+
+
+
+
+
+
+
+
+
+package pattern_java;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ASUS
+ */
+public class Pattern_java {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter the number of rows to be printed");
+        int n = obj.nextInt();
+        for (int i = 0; i<=n ; i++) {
+            int p=1;
+            int k= i;
+             for (int j = 0; j<=n-i; j++) {
+             System.out.print(" ");
+          }
+             
+          for (int j = i; j>=0; j--) {
+              
+             System.out.print(j);
+          }
+          
+            for (int j = 1; j <=i; j++) {
+                System.out.print(j);
+            }
+          System.out.println();
+    }
+    
+}
+}
